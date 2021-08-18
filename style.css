@@ -1,8 +1,21 @@
-.container {
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
+.outer-container {
+    padding: 20px;
+
 }
 
-div {
-    height: 500px;
+#clear-button {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 200px;
+    margin-left: 50px;
 }
+
+.container {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    border: solid 5px black;
+    margin-right: 500px;
+    margin-left: 50px;
+}
+
