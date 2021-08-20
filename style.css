@@ -1,6 +1,5 @@
 .outer-container {
     padding: 20px;
-
 }
 
 #clear-button {
@@ -12,10 +11,6 @@
 
 .container {
     display: grid;
-    width: 500px;
-    height: 500px;
     border: solid 5px black;
-    margin-right: 500px;
-    margin-left: 50px;
 }
 

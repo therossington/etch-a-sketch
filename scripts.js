@@ -12,6 +12,7 @@ function createGrid () {
     for (let i = 0; i < size * size; i++) {
       const gridItem = document.createElement('div'+i);
       container.appendChild(gridItem);
+      gridItem.style.height = '50px';
       gridItem.addEventListener('mouseenter', () => {
           gridItem.style.backgroundColor = setColor;
       })}
