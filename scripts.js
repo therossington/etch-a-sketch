@@ -12,19 +12,25 @@ function createGrid () {
     for (let i = 0; i < size * size; i++) {
       const gridItem = document.createElement('div'+i);
       container.appendChild(gridItem);
-      gridItem.style.height = '50px';
       gridItem.addEventListener('mouseenter', () => {
           gridItem.style.backgroundColor = setColor;
-      })}
+      })
+      container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+      container.style.gridTemplateRows = `repeat(${size}, 1fr)`;}
 }
 
 clearButton.addEventListener('click', () => {
     container.innerHTML = '';
-    size = Number(window.prompt('Enter the grid size'));
+    getSize = Number(window.prompt('Enter the grid size'));
+    function sizeCheck () {
+        if (getSize > 100) {
+        return alert('Please enter a number less than 100');
+        } else return getSize;
+    };
+    size = sizeCheck();
     createGrid();
 })
 
 window.onload = () => {
     createGrid();
-    size;
 };

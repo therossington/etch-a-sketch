@@ -1,16 +1,28 @@
+h1 {
+    color: black;
+    font-size: 25px;
+    margin: 20px;
+    padding-left: 15px;
+}
+
 .outer-container {
+    display: flex;
+    flex-direction: row;
     padding: 20px;
 }
 
 #clear-button {
-    margin-bottom: 20px;
+    margin: 20px;
     padding: 10px;
     width: 200px;
-    margin-left: 50px;
+    height: 50px;
+    cursor: pointer;
 }
 
 .container {
     display: grid;
     border: solid 5px black;
+    width: 500px;
+    height: 500px;
 }
 
